@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>HELPDIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Strona domowa</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="oferta.html">Co robimy</a></li>
+                    <li><a href="kontakt.html">Zespół</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Czym sie zajmujemy</h1>
+    </section>
+    <!-- kurs -->
+    <section class="kursy">
+        <div class="row">
+            <div class="kursy-col">
+                <h3>Odpowiednie zagospodarowanie przestrzeni/pomieszczeń</h3>
+                <p>• sporządzanie odpowiednich pomiarów i planów zagospodarowania
+                    <br><br>• pomoc w wdrażaniu odpowiednich odległości między regałami, aby
+                    zapewnić optymalne warunki do swobodnego przemieszczania się osób
+                    niepełnosprawnych
+                    <br><br>• pomoc w sporządzaniu specjalnych miejsc przy stolikach, które miałyby
+                    większe przestrzenie, a osoby z utrudnieniami w poruszaniu się (w tym na
+                    wózku inwalidzkim) mogły komfortowo i na spokojnie się usadowić</p>
+            </div>
+            <div class="kursy-col">
+                <h3>Wprowadzenie infrastruktury sprzyjającej osobom niepełnosprawnym podjazdów,
+                    wind, poręczy itp.
+                    </h3>
+                <p>• tworzenie planów podjazdów i wdrażanie ich w życie
+                    <br><br>• tworzenie planów optymalnego ułożenia poręczy w restauracjach i sklepach
+                    <br><br>• dostosowanie sklepów i restauracji pod powstanie wind, tworzenie planów
+                    wind</p>
+            </div>
+            <div class="kursy-col">
+                <h3>Zautomatyzowana pomoc</h3>
+                <p>• stworzenie systemów przywołania asystenta osoby niepełnosprawnej,
+                    która by udzielała informacji i pomocy osobie niepełnosprawnej za pomocą
+                    kliknięcia odpowiedniego przycisku, który znajdowałby się w kluczowych
+                    miejscach w sklepie czy restauracji
+                    <br><br>• tworzenie systemu obsługującego zautomatyzowane podjazdów na
+                    guzik/przycisk itp.
+                    <br><br>• realizacja planów wind dla niepełnosprawnych</p>
+            </div>
+            <div class="kursy-col">
+                <h3>Pomoc w składaniu wniosków pozyskujących fundusze od państwa lub UE</h3>
+                <p>• firma zajmuje się również wsparciem w pozyskiwaniu funduszy od państwa
+                    lub UE w sprawie dotacji na m.in.: utworzenie infrastruktury przyjaznej
+                    niepełnosprawnym, czy odpowiednie dostosowywanie przestrzeni
+                    <br><br>• pomagamy w odpowiednim przygotowaniu wniosków i prowadzimy
+                    doradztwo związane z formalnościami</p>
+            </div>
+            <div class="kursy-col">
+                <h3>Szkolenia dla pracowników</h3>
+                <p>• udzielamy fachowych szkoleń pracowniczych z zakresu udzielania
+                    odpowiedniej pomocy dla osób niepełnosprawnych
+                    <br><br>• szkolimy, aby pracownicy nie czuli dyskomfortu, wiedzieli jak się
+                    odpowiednio zachować przy osobie niepełnosprawnej i umieli znaleźć jak
+                    najlepsze rozwiązania, aby pomóc takim osobom co będzie wpływać
+                    pozytywnie na postrzeganie sklepu czy restauracji
+                    </p>
+            </div>
+            <div class="kursy-col">
+                <h3>Poznaj Zespół</h3>
+                <p><a href="kontakt.html" class="hero-btn red-btn">Zespół</a></p>
+            </div>
+        </div>
+    </section>
+    <!---footer--->
+    <section class="footer">
+        <h4>JESTEŚMY NA</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+    <script>
+        //JAVASCRIPT DLA MENU
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

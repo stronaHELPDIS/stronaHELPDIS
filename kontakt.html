@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>HELPDIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Strona domowa</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="oferta.html">Co robimy</a></li>
+                    <li><a href="kontakt.html">Zespół</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Zespół</h1>
+    </section>
+    <!---kontakt--->
+    <section clas="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-users"></i>
+                    <span>
+                         <h5>Katarzyna Wodyk</h5>
+                         <h5>Natalia Szewczyk</h5>
+                         <h5>Adrian Misztal</h5>
+                         <h5>Kacper Rosiński</h5>
+                     </span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---footer--->
+    <section class="footer">
+        <h4>JESTEŚMY NA</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+    <script>
+        //JAVASCRIPT DLA MENU
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
